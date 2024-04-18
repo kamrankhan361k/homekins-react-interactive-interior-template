@@ -1,0 +1,372 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Template Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+		p{margin:0; padding:0;}
+		hr{ height:1px; margin:40px 0 40px 0;}
+		pre {
+		  display:block;
+		  font:normal 12px/22px Monaco,Monospace !important;
+		  color:#333;
+		  background-color:#f2f2f2;
+		  background-image:-webkit-repeating-linear-gradient(top, #e5e5e5 0px, #e5e5e5 22px, #f2f2f2 22px, #f2f2f2 44px);
+		  background-image:-moz-repeating-linear-gradient(top, #e5e5e5 0px, #e5e5e5 22px, #f2f2f2 22px, #f2f2f2 44px);
+		  background-image:-ms-repeating-linear-gradient(top, #e5e5e5 0px, #e5e5e5 22px, #f2f2f2 22px, #f2f2f2 44px);
+		  background-image:-o-repeating-linear-gradient(top, #e5e5e5 0px, #e5e5e5 22px, #f2f2f2 22px, #f2f2f2 44px);
+		  background-image:repeating-linear-gradient(top, #e5e5e5 0px, #e5e5e5 22px, #f2f2f2 22px, #f2f2f2 44px);
+		  padding:0em 1em;
+		  overflow:auto;
+		  border:solid 1px #ccc;
+		}
+		.alpha li{
+			margin-bottom: 5px;
+		}
+		
+		pre strong{color:#3A66FF;}
+    </style>
+</head>
+
+
+<body>
+<div class="container">
+	
+		<h3 class="center alt">Documentation by &ldquo;on3-step&quot;</h3>
+		
+		<hr>
+		
+  <h1 class="center filename">&ldquo;Homekins - React Interactive Interior Template&rdquo;</h1>
+		<p>Homekins  is React Interactive Interior Template, is a bootstrap page built with React js. It implements bootstrap 4 package with interactive design. Each page section  custom with reactdom + styled-components , you will get smooth page transition on everypages, css files and js file well organized in directory, it's easy to customize with single scss file for custom all element style, styled-components also include for style on each component instead.</p>
+		<p>&nbsp;</p>
+		<p><strong> IMPORTANT</strong>:It's built with React  not HTML page. </p>
+		<br>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 07 Oct, 2020<br>
+					By: on3-step<br>
+					Email / skype: <a href="mailto:desmon25@live.com">desmon25@live.com</a><br><br>
+					</strong>
+			  </p>
+</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing my template. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="https://themeforest.net/user/on3-step">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+  <h2 id="toc" class="alt">Getting Started</h2>
+		<ol class="alpha">
+		  <li><strong>Node.js and NPM :</strong> You can download Node.js from <a href="https://nodejs.org" target="_blank">https://nodejs.org.</a> NPM comes bundled with Node.js.</li>
+		  <li><strong>NPM :</strong> You must have to npm install packages. You can do this by running <strong>npm install</strong> from the root of your project to install all the necessary dependencies.</li>
+		  <li><strong>Run <i>npm start</i></strong> for a dev server. Navigate to http://localhost:3000/ . The app will automatically reload if you change any of the source files.</li>
+		  <li><strong>Run <i>npm run build</i></strong> to build the project. The build artifacts will be stored in the build/ directory. Use the npm run build --prod flag for a production build.</li>
+		  <br>
+		  <li><a href="#A">Folder Structure</a></li>
+		  <li><a href="#B">HTML Structure</a></li>
+		  <li><a href="#C">CSS Files</a></li>
+          <li><a href="#D">Dependencies</a></li>
+  </ol>
+		
+<hr>
+<h3 id="A">E Folder Structure - <a href="#toc">top</a>  </h3>
+  <h3>Structure Template</h3>
+<pre>
+Homekins 
+// root folder
++
+template
+├───public
+│       ├───images			-- all images files
+└───src
+│  ├───App.jsx              	-- set your page here
+│  │   ├───componets			-- all component page js
+│  │   ├───pages			    -- all page js
+│  │   ├───animation			-- all transition animation custom
+│  │   ├───styles               -- all style files (js style + css styles)      
+
+   
++
+</pre>
+<hr/>	
+  <h3 id="B">E HTML structure - <a href="#toc">top</a>  </h3>
+  <h3>Nav Structure How to change Path link and logo, see the blue color below</h3>
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+ 
+  <pre style="margin: 0; line-height: 125%">
+ <p>import React, { useState, useEffect } from &quot;react&quot;;<br>
+    import {
+    Wrapper,
+    Container,
+    Body,
+    Page,
+    LinkTag,
+    SocialContainer,
+    Overlaybg
+    } from &quot;../styles/Navigation.styles&quot;;<br>
+    import { withRouter } from &quot;react-router&quot;;
+    import NavButton from &quot;./NavButton&quot;;</p>
+  <p>const NavigationMenu = ({ history, hasBackground, setBackground }) =&gt; {
+    const [isOn, setState] = useState(false);
+    const [shouldAnimate, setShouldAnimate] = useState(false);
+    const [linking, setLink] = useState(&quot;&quot;);</p>
+  <p> useEffect(() =&gt; {
+    !!linking &amp;&amp;
+    setTimeout(() =&gt; {
+    switch (linking) {
+    case &quot;home&quot;:
+    history.push(&quot;/&quot;);
+    setState(false);
+    setLink(&quot;&quot;);
+    break;
+    case &quot;<strong>about</strong>&quot;:
+    history.push(&quot;/<strong>about</strong>&quot;);
+    setState(false);
+    setLink(&quot;&quot;);
+    break;
+    case &quot;work&quot;:
+    history.push(&quot;/work&quot;);
+    setState(false);
+    setLink(&quot;&quot;);
+    break;
+    case &quot;news&quot;:
+    history.push(&quot;/news&quot;);
+    setState(false);
+    setLink(&quot;&quot;);
+    break;
+    case &quot;contact&quot;:
+    history.push(&quot;/contact&quot;);
+    setState(false);
+    setLink(&quot;&quot;);
+    break;
+    default:
+    setLink(&quot;&quot;);
+    }
+    setBackground(false);
+    window.scrollTo(0, 0);
+    }, 0);
+    }, [linking, history, setBackground]);</p>
+<p> useEffect(() =&gt; {
+    shouldAnimate &amp;&amp;
+    !isOn &amp;&amp;
+    setTimeout(() =&gt; {
+    setShouldAnimate(false);
+    }, 0);
+    }, [shouldAnimate, isOn]);</p>
+<p> const closeHandler = () =&gt; {
+    setShouldAnimate(true);
+    setState(!isOn);
+    };</p>
+<p> const setLinkHandler = text =&gt; {
+    setShouldAnimate(true);
+    setLink(text);
+    };
+ </p><p> useEffect(() =&gt; {
+    const header = document.getElementById(&quot;header&quot;);
+    const totop = document.getElementById(&quot;scroll-to-top&quot;)
+    const sticky = header.offsetTop;
+    const scrollCallBack = window.addEventListener(&quot;scroll&quot;, () =&gt; {
+    if (window.pageYOffset &gt; sticky + 0) {
+    header.classList.add(&quot;sticky&quot;);
+    totop.classList.add(&quot;show&quot;);
+    } else {
+    header.classList.remove(&quot;sticky&quot;);
+    totop.classList.remove(&quot;show&quot;);
+    } 
+    });<br>
+    return () =&gt; {
+    window.removeEventListener(&quot;scroll&quot;, scrollCallBack);
+    };
+    }, []);</p>
+  <p> return (
+  &lt;header&gt;
+  &lt;div id='header'&gt;&lt;/div&gt;<br>
+  &lt;div className='logo'&gt;
+  <strong>&lt;img
+    src=&quot;./img/logowhite.png&quot;
+    className=&quot;img-fluid&quot;
+    alt=&quot;#&quot;
+    /&gt;</strong>
+  &lt;span className='callus'&gt;
+    Call Us: (+6221) 000 888 999
+  &lt;/span&gt;
+  &lt;/div&gt;<br>
+  &lt;Wrapper open={isOn} shouldAnimate={shouldAnimate}&gt;<br>
+  &lt;Overlaybg open={isOn} shouldAnimate={shouldAnimate} onClick={closeHandler}/&gt;
+  &lt;Container
+    open={isOn}
+    onClick={closeHandler}
+    hasBackground={hasBackground}&gt;
+  &lt;NavButton open={isOn} /&gt;
+  &lt;/Container&gt;
+
+  &lt;Body className='midwrpr' open={isOn} shouldAnimate={shouldAnimate}&gt;
+  &lt;div className='conPage'&gt;
+  &lt;Page className='mainBtn' variant=&quot;home&quot; onClick={() =&gt; setLinkHandler(&quot;home&quot;)}&gt;
+  &lt;LinkTag&gt;Home&lt;/LinkTag&gt;
+  &lt;/Page&gt;
+  &lt;Page className='mainBtn' variant=&quot;<strong>about</strong>&quot; onClick={() =&gt; setLinkHandler(&quot;<strong>about</strong>&quot;)}&gt;
+  &lt;LinkTag&gt;About&lt;/LinkTag&gt;
+  &lt;/Page&gt;
+  &lt;Page className='mainBtn' variant=&quot;work&quot; onClick={() =&gt; setLinkHandler(&quot;work&quot;)}&gt;
+  &lt;LinkTag&gt;Projects&lt;/LinkTag&gt;
+  &lt;/Page&gt;
+  &lt;Page className='mainBtn' variant=&quot;about&quot; onClick={() =&gt; setLinkHandler(&quot;news&quot;)}&gt;
+  &lt;LinkTag&gt;News&lt;/LinkTag&gt;
+  &lt;/Page&gt;
+  &lt;Page className='mainBtn' variant=&quot;about&quot; onClick={() =&gt; setLinkHandler(&quot;contact&quot;)}&gt;
+  &lt;LinkTag&gt;Contact&lt;/LinkTag&gt;
+  &lt;/Page&gt;
+  &lt;/div&gt;
+ </p><p> &lt;div className='info'&gt;
+  &lt;span&gt;(+6221) 000 888 999&lt;/span&gt;
+  &lt;span className='link'&gt;support@homekins.com&lt;/span&gt;
+  &lt;span&gt;129 Park street, New York 10903&lt;/span&gt;
+  &lt;/div&gt;</p><p> &lt;/Body&gt;<br>
+  &lt;SocialContainer className='soc-icon' open={isOn}&gt;
+  &lt;span&gt;Follow us:&lt;/span&gt;
+  &lt;span className='socicon'&gt;&lt;i className=&quot;fa fa-facebook-f&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+  &lt;span className='socicon'&gt;&lt;i className=&quot;fa fa-linkedin&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+  &lt;span className='socicon'&gt;&lt;i className=&quot;fa fa-twitter&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+  &lt;span className='socicon'&gt;&lt;i className=&quot;fa  fa-instagram&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+  &lt;/SocialContainer&gt;
+
+  &lt;/Wrapper&gt;<br>
+  &lt;/header&gt;<br>
+    );<br>
+    };</p>
+<p>export default withRouter(NavigationMenu);<br>
+</p>
+  </pre>
+</div>
+<br>
+<h3>Footer Structure How to change Copyright ?</h3>
+<!-- HTML generated using hilite.me --><div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+  <pre style="margin: 0; line-height: 125%"><span style="font-weight: bold">import</span> React from <span style="font-style: italic">&#39;react&#39;</span>;
+
+export <span style="font-weight: bold">default</span> () =&gt; (
+  &lt;footer className=<span style="font-style: italic">&#39;container-fluid black_more&#39;</span>&gt;
+    &lt;div className=<span style="font-style: italic">&#39;row m-10-hor&#39;</span>&gt;
+      &lt;div className=<span style="font-style: italic">&#39;col-md-4&#39;</span>&gt;
+        &lt;div className=<span style="font-style: italic">&#39;footer-col&#39;</span>&gt;
+          &lt;div className=<span style="font-style: italic">&#39;heading&#39;</span>&gt;
+            &lt;h2 className=<span style="font-style: italic">&#39;font-weight-bold &#39;</span>&gt;About Us&lt;/h2&gt;
+          &lt;/div&gt;
+          &lt;div className=<span style="font-style: italic">&#39;content&#39;</span>&gt;
+             &lt;p&gt;Donec mollis quisque convallis libero <span style="font-weight: bold">in</span> sapien pharetra tincidunt. 
+             Aliquam elit ante, malesuada id, tempor eu, gravida id, odio.
+             Maecenas suscipit.&lt;/p&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div className=<span style="font-style: italic">&#39;col-md-2&#39;</span>&gt;
+        &lt;div className=<span style="font-style: italic">&#39;footer-col&#39;</span>&gt;
+          &lt;div className=<span style="font-style: italic">&#39;heading&#39;</span>&gt;
+            Usefull link
+          &lt;/div&gt;
+          &lt;div className=<span style="font-style: italic">&#39;content&#39;</span>&gt;
+             &lt;div className=<span style="font-style: italic">&#39;link&#39;</span>&gt;Frequently Asked&lt;/div&gt;
+             &lt;div className=<span style="font-style: italic">&#39;link&#39;</span>&gt;Terms &amp; Conditions&lt;/div&gt;
+             &lt;div className=<span style="font-style: italic">&#39;link&#39;</span>&gt;Help Center&lt;/div&gt;
+             &lt;div className=<span style="font-style: italic">&#39;link&#39;</span>&gt;Contact Us&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div className=<span style="font-style: italic">&#39;col-md-2&#39;</span>&gt;
+        &lt;div className=<span style="font-style: italic">&#39;footer-col&#39;</span>&gt;
+          &lt;div className=<span style="font-style: italic">&#39;heading&#39;</span>&gt;
+            Features
+          &lt;/div&gt;
+          &lt;div className=<span style="font-style: italic">&#39;content&#39;</span>&gt;
+            &lt;div className=<span style="font-style: italic">&#39;link&#39;</span>&gt;Career&lt;/div&gt;
+            &lt;div className=<span style="font-style: italic">&#39;link&#39;</span>&gt;Brand Identity&lt;/div&gt;
+            &lt;div className=<span style="font-style: italic">&#39;link&#39;</span>&gt;Investment&lt;/div&gt;
+            &lt;div className=<span style="font-style: italic">&#39;link&#39;</span>&gt;Agency Patner&lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+      &lt;div className=<span style="font-style: italic">&#39;col-md-4&#39;</span>&gt;
+        &lt;div className=<span style="font-style: italic">&#39;footer-col&#39;</span>&gt;
+          &lt;div className=<span style="font-style: italic">&#39;heading&#39;</span>&gt;
+            Follow Us
+          &lt;/div&gt;
+          &lt;div className=<span style="font-style: italic">&#39;content&#39;</span>&gt;
+            &lt;p&gt;Malesuada id, tempor eu, gravida id, odio.
+               Maecenas suscipit.&lt;/p&gt;
+            &lt;div className=<span style="font-style: italic">&#39;socialicon&#39;</span>&gt;
+              &lt;i className=<span style="font-style: italic">&quot;fa fa-facebook-f&quot;</span>&gt;&lt;/i&gt;
+            &lt;/div&gt;
+            &lt;div className=<span style="font-style: italic">&#39;socialicon&#39;</span>&gt;
+              &lt;i className=<span style="font-style: italic">&quot;fa fa-linkedin&quot;</span>&gt;&lt;/i&gt;
+            &lt;/div&gt;
+            &lt;div className=<span style="font-style: italic">&#39;socialicon&#39;</span>&gt;
+              &lt;i className=<span style="font-style: italic">&quot;fa fa-twitter&quot;</span>&gt;&lt;/i&gt;
+            &lt;/div&gt;
+            &lt;div className=<span style="font-style: italic">&#39;socialicon&#39;</span>&gt;
+              &lt;i className=<span style="font-style: italic">&quot;fa  fa-instagram&quot;</span>&gt;&lt;/i&gt;
+            &lt;/div&gt;
+          &lt;/div&gt;
+        &lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div className=<span style="font-style: italic">&#39;subfooter&#39;</span>&gt;
+      &lt;div className=<span style="font-style: italic">&#39;row m-10-hor&#39;</span>&gt;
+        &lt;div className=<span style="font-style: italic">&#39;col-md-6&#39;</span>&gt;
+          &lt;div className=<span style="font-style: italic">&#39;content&#39;</span>&gt;<span style="border: 1px solid #FF0000">© Copyrights 2020 &lt;span className=<span style="font-style: italic">&#39;font-weight-bold&#39;</span>&gt;Homekins&lt;/span&gt; All rights reserved.&lt;/div&gt;
+       			 &lt;/div&gt;</span>
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/footer&gt;
+);
+</pre></div>
+<hr/>
+<h3 id="C">B) CSS Files - <a href="#toc">top</a></h3>
+
+		<span id="result_box" lang="en">These are css files used in this template:</span>
+  <ol>
+		  <li><strong>main.scss</strong> -  main css files (<span id="result_box2" lang="en">You can change  all styles from <strong>main.scss </strong>file. </span>)</li>
+		</ol>
+  <pre>
+/* CSS Document */
+
+/* 
+*
+*
+[Table of contents]
+*
+*
+*
+
+  font / @import <br>  color / $white<br>  general / html<br>  preloader / #preloader<br>  header / header<br>  slider home / .jumbomain<br>  slick/ .slick-slider<br>  home / .featurehome<br>  footer / footer<br>  works + news / .herocaption<br>  pagination / .pagination<br>  contact / .form-side<br>  media all / @media only screen and (max-width: 1199px)
+
+*/
+</pre>
+<hr>
+		
+<h3 id="D">C) Dependencies - <a href="#toc">top</a></h3>
+<pre>    &quot;@testing-library/jest-dom&quot;: &quot;^4.2.4&quot;,<br>    &quot;@testing-library/react&quot;: &quot;^9.5.0&quot;,<br>    &quot;@testing-library/user-event&quot;: &quot;^7.2.1&quot;,<br>    &quot;bootstrap&quot;: &quot;^4.5.2&quot;,<br>    &quot;emailjs-com&quot;: &quot;^2.6.3&quot;,<br>    &quot;font-awesome&quot;: &quot;^4.7.0&quot;,<br>    &quot;google-map-react&quot;: &quot;^2.1.7&quot;,<br>    &quot;node-sass&quot;: &quot;^4.14.1&quot;,<br>    &quot;react&quot;: &quot;^16.13.1&quot;,<br>    &quot;react-animated-slider&quot;: &quot;^2.0.0&quot;,<br>    &quot;react-dom&quot;: &quot;^16.13.1&quot;,<br>    &quot;react-reveal&quot;: &quot;^1.2.2&quot;,<br>    &quot;react-router-dom&quot;: &quot;^5.2.0&quot;,<br>    &quot;react-scripts&quot;: &quot;3.4.3&quot;,<br>    &quot;react-slick&quot;: &quot;^0.27.11&quot;,<br>    &quot;slick-carousel&quot;: &quot;^1.8.1&quot;,<br>    &quot;styled-components&quot;: &quot;^5.2.0&quot;
+</pre>
+
+<hr>
+<hr>
+<div id="G">&nbsp;</div>
+<p>Once again, thank you so much for purchasing this template. As I said at the beginning, I'd be glad to help you if you have any questions relating to this template. No guarantees, but I'll do my best to assist. If you have a more general question relating to the template you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		
+		<p class="append-bottom alt large"><strong>on3-step</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+</div><!-- end div .container -->
+</body>
+</html>
